@@ -1,0 +1,143 @@
+/**index.wxss**/
+.container1 {
+  height: 100%;
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+} 
+
+.top{
+  width: 100%; 
+  height: 400rpx;
+  /* margin-bottom: 200rpx; */
+}
+
+.top-cover{
+  position: absolute;
+  width: 100%; 
+  height: 200rpx; 
+  z-index: -1; 
+  top: 0;
+  left: 0;
+  filter: blur(20rpx);
+  -webkit-filter: blur(20rpx);
+   transform: scale(2);  
+}
+
+.right-cover{
+  position: absolute;
+  top: 125rpx;
+  right: 50rpx;
+  width: 190rpx;
+}
+
+.top-title{
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50rpx;
+  padding: 75rpx 60rpx 20rpx 60rpx;
+}
+
+.top-time{
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 25rpx;
+  padding: 0 60rpx;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  color: black;
+  width: 100%;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: lightgrey;
+  margin-bottom: 50rpx;
+}
+
+.info-title{
+  font-size: 20rpx;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 70rpx 60rpx;
+}
+
+.info-line{
+  font-size: 20rpx;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10rpx; 
+}
+
+.bgy{
+  background-color:orange;
+  position: relative;
+  top: 0rpx;
+  left: -219rpx;
+  width: 116rpx;
+  height: 24rpx;
+  z-index: -1;  
+}
+
+.info-line-title{
+  color:darkgrey;
+  width: 50rpx;
+  font-size: 24rpx;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0 0rpx 20rpx 30rpx;
+  text-align: center;
+  word-break:keep-all;
+}
+
+.info-line-content{
+  color: black;
+  font-size: 24rpx;
+  font-family: 'Times New Roman', Times, serif;
+  padding-right: 55rpx;
+  margin-left: 10rpx;
+  padding-left: 10rpx
+}
+
+.h-view{
+  display: flex;
+  flex-direction: row;
+  width:200%;
+  height: 750rpx;
+  border:1px solid #DCDCDC;
+}
+
+scroll-view{
+  border: 1px solid #DCDCDC;
+  height: 550rpx;
+}
+
+.role{
+  display: inline-block;
+  height: 300rpx;
+  margin: 20rpx;
+}
+
+.actor-role{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.actor-text{
+  text-align: center;
+  font-size: 24rpx;
+  width: 250rpx;
+  margin: 0 20rpx;
+}
+
+.role-text{
+  text-align: center;
+  font-size: 24rpx;
+  color: darkgrey;
+  word-break: break-all;
+  width: 250rpx;
+  margin: 20rpx;
+  white-space: pre-wrap;
+}

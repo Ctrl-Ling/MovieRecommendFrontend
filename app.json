@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/types/types",
+    "pages/type/type",
+    "pages/search/search",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#37a1f4",
+    "navigationBarTitleText": "创造404电影推荐",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "selectedColor": "#37a1f4",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/imgs/home.png",
+        "selectedIconPath": "/imgs/home_click.png"
+      },
+      {
+        "pagePath": "pages/types/types",
+        "text": "分类",
+        "iconPath": "/imgs/classify.png",
+        "selectedIconPath": "/imgs/classify_click.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "/imgs/search.png",
+        "selectedIconPath": "/imgs/search_click.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000
+  }
+}

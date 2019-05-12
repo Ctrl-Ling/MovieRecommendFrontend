@@ -1,0 +1,16 @@
+/* pages/type/type.wxss */
+.all{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+navigator{
+  width:33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+image{
+    width:80%;
+}

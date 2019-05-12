@@ -1,0 +1,27 @@
+<!--pages/search/search.wxml-->
+<form bindsubmit='searchmovie'>
+  <view class='top'>
+    <input placeholder='输入想看的电影或影人名字' class='sousuo' name='movie'>
+    </input>
+    <view style='align-items:center'>
+      <button form-type='submit'>搜索</button>
+    </view>
+  </view>
+</form>
+<view class='all'>
+  <navigator wx:for='{{movies}}' url='../detail/detail?id={{item.id}}'>
+    <image src='{{item.cover}}' class='juzhao'></image>
+    <view class='textview'>{{item.name}}</view>
+     <view class='grade'>
+      <view class='stars'>
+       <image src='/imgs/star.png' class='star'></image>
+       <image src='/imgs/star.png' class='star'></image>
+       <image src='/imgs/star.png' class='star'></image>
+       <image src='/imgs/star.png' class='star'></image>
+       <image src='/imgs/star.png' class='star'></image>
+       <view class='back'  style='width:{{item.grade*10.1+"%"}}'></view>
+       </view>
+      <view>{{item.grade}}</view>
+    </view>
+  </navigator>
+</view>

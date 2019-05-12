@@ -1,0 +1,34 @@
+<!--pages/shouye/shouye.wxml-->
+<view class='top'>
+  <view>
+    <image src='/imgs/fire.png' mode='aspectFit' style='height:32rpx;width:32rpx'></image>
+    热门电影
+  </view>
+  <view class='pingfen'>
+    <view class='pingfen2'>按评分排序</view>
+    <button bindtap='LowToHight' style='color:{{text1}}'>
+      ▲
+    </button>
+    <button bindtap='HightToLow' class='button-right' style='color:{{text2}}'>
+      ▼
+    </button>
+  </view>
+</view>
+<view class='all'>
+  <navigator wx:for="{{movies}}" url='../detail/detail?id={{item.id}}'>
+    <image src='{{item.cover}}' class='juzhao'></image>
+    <view class='textview'>{{item.name}}</view>
+    <view class='grade'>
+      <view class='stars'>
+        <image src='/imgs/star.png' class='star'></image>
+        <image src='/imgs/star.png' class='star'></image>
+        <image src='/imgs/star.png' class='star'></image>
+        <image src='/imgs/star.png' class='star'></image>
+        <image src='/imgs/star.png' class='star'></image>
+        <view class='back' style='width:{{item.grade*10.1+"%"}}'></view>
+      </view>
+      <view>{{item.grade}}</view>
+    </view>
+  </navigator>
+  <view>{{error}}</view>
+</view>

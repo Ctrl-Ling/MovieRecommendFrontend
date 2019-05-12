@@ -1,0 +1,7 @@
+<!--pages/type/type.wxml-->
+<view class='all'>
+  <navigator wx:for="{{types}}" wx:key="{{id}}" class='jump' url='../type/type?typename={{item.value}}'>
+    <image src='{{imgs[item.id]}}'></image>
+    {{item.value}}
+  </navigator>
+</view>

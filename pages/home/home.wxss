@@ -1,0 +1,74 @@
+/* pages/shouye/shouye.wxss */
+.top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20rpx 15rpx 10rpx 15rpx;
+  font-size: 34rpx;
+  border-bottom: 1px solid darkgrey;
+}
+.pingfen{
+  /* margin-left: 15rpx; */
+  display: flex;
+  flex-direction: row;
+  font-size: 30rpx;
+}
+
+.pingfen2{
+  font-size: 26rpx;
+  position: relative;
+  top:6rpx;
+  right: -15rpx;
+  z-index: 10;
+}
+
+.top button{
+  width: 100rpx;
+  height: 60rpx;
+  background-color:#DCDCDC;
+  font-size:40rpx; 
+  line-height: 40rpx;
+  padding : 0;
+  margin-right: -35rpx;
+}
+
+.button-right{
+  width: 100rpx;
+  height: 60rpx;
+  background-color:#DCDCDC;
+   font-size:40rpx; 
+  line-height: 40rpx;
+  padding : 0;
+  /* margin-left: -65rpx; */
+}
+
+button::after{
+ border: none;
+}
+.top image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.all{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top:5px;
+}
+.all navigator{
+  width:33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.back{
+  position: relative;
+  z-index: -1;
+  width:60%;
+  top:-23rpx;
+  height: 16rpx;
+  background-color:  orange;
+}
+

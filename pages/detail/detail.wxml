@@ -1,0 +1,73 @@
+<!--index.wxml-->
+<view wx:if='{{timeout}}'>垃圾后台崩了</view>
+<view wx:else class="container1">
+  <image class='top-cover' data-src='{{all.cover}}' src='{{all.cover}}' mode="center" bindtap='showImgCover'></image>
+  <image class='right-cover' data-src='{{all.cover}}' src='{{all.cover}}' mode='widthFix' bindtap='showImgCover'></image>
+  <view class='top' data-src='{{all.cover}}' bindtap='showImgCover'>
+    <view class='top-title' data-src='{{all.cover}}' bindtap='showImgCover'>
+      {{all.name}}
+    </view>
+    <view class='top-time' data-src='{{all.cover}}' bindtap='showImgCover'>
+      时长：{{all.time}}
+    </view>
+  </view>
+  <view class='info'>
+    <!-- <view class='info-title'>{{all.name}}</view> -->
+    <view class='info-line'>
+      <view class='info-line-title'>评分</view>
+      <!-- <block wx:for='{{}}'> -->
+      <image src='/imgs/star.png' style='height:24rpx;width:24rpx'></image>
+      <image src='/imgs/star.png' style='height:24rpx;width:24rpx'></image>
+      <image src='/imgs/star.png' style='height:24rpx;width:24rpx'></image>
+      <image src='/imgs/star.png' style='height:24rpx;width:24rpx'></image>
+      <image src='/imgs/star.png' style='height:24rpx;width:24rpx'></image>
+      <!-- </block> -->
+      <view class='info-line-content'>{{all.grade}}</view>
+      <view class='bgy' style='width:{{all.grade/10*116+"rpx"}}'></view>
+    </view>
+    <view class='info-line'>
+      <view class='info-line-title'>导演</view>
+      <view class='info-line-content'>{{all.director}}</view>
+    </view>
+    <view class='info-line'>
+      <view class='info-line-title' style='padding-left:35rpx'>影人</view>
+      <view class='info-line-content'>{{all.actor}}</view>
+    </view>
+    <view class='info-line'>
+      <view class='info-line-title'>类型</view>
+      <view class='info-line-content'>{{all.type}}</view>
+    </view>
+  </view>
+  <view class='info'>
+    <view class='info-line-title'>剧情简介</view>
+    <view class='info-line'>
+      <view class='info-line-content'>{{all.desc}}</view>
+    </view>
+  </view>
+  <view class='info'>
+    <view class='info-line-title'>影人</view>
+    <scroll-view scroll-x>
+      <view class='h-view' style='height:100%;white-space: nowrap'>
+        <block wx:for='{{all.actors}}'>
+          <view class='actor-role'>
+            <image src='{{item.imgurl}}' data-src='{{item.imgurl}}' bindtap='showImgActors' class='role' mode='widthFix' style='width: 250rpx;'></image>
+            <view class='actor-text'>{{item.name}}</view>
+            <view class='role-text'>{{item.act}}</view>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+  <view class='info'>
+    <view class='info-line-title'>剧照</view>
+    <scroll-view scroll-x style='height:350rpx'>
+      <view class='h-view' style='height:100%;white-space: nowrap'>
+        <block wx:for='{{all.stills}}'>
+          <view class='actor-role'>
+            <image src='{{item.imgurl}}' data-src='{{item.imgurl}}' bindtap='showImgStills' class='role' mode='widthFix' style='width: 250rpx;'></image>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+</view>
